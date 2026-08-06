@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Tahanan Bistro | Reservation</title>
+<meta charset="UTF-8">
+</head>
+
+<body style="background:#E5E0D8; color: #4A3F35">
+
+<div style="position:fixed; top:15px; left:50%; transform:translateX(-50%); width:92%; background:#FDFBF8; border:2px solid #B3B792; border-radius:45px; padding:18px 35px; box-shadow:0 10px 24px rgba(114,92,58,.18); z-index:1000;">
+<div style="display:flex; justify-content:space-between; align-items:center;">
+<h2 style="margin:0; font-family:'Times New Roman',serif; font-size:34px; letter-spacing:2px; color:#725C3A;">Tahanan<i style="color:#809671;"> Bistro</i></h2>
+
+<div>
+
+<span style="display:inline-block; width:16px; height:16px; background:#809671; border-radius:50%; margin:4px; box-shadow:2px 2px 6px rgba(114,92,58,.25),
+inset 1px 1px 2px rgba(255,255,255,.7);"></span>
+<span style="display:inline-block; width:16px; height:16px; background:#D2AB80; border-radius:50%; margin:4px; box-shadow:2px 2px 6px rgba(114,92,58,.25),
+inset 1px 1px 2px rgba(255,255,255,.7);"></span>
+<span style="display:inline-block; width:16px; height:16px; background:#E5E0D8; border:1px solid #B3B792; border-radius:50%; margin:4px; box-shadow:2px 2px 6px rgba(114,92,58,.25),
+inset 1px 1px 2px rgba(255,255,255,.7);"></span>
+</div></div></div>
+
+<div style="position:fixed; top:95px; left:50%; transform:translateX(-50%); width:75%; background:#EEF3EB; border:2px solid #809671; border-radius:50px; padding:14px; display:flex; justify-content:center; gap:28px; box-shadow:0 8px 18px rgba(114,93,58,.15); z-index:999;">
+<a href="home.html" style="font-family:Arial,sans-serif; color:#4A3F35; font-weight:bold; text-decoration:underline;">Home</a>
+<a href="about.html" style="font-family:Arial,sans-serif; color:#4A3F35; font-weight:bold; text-decoration:underline;">About</a>
+<a href="menu.html" style="font-family:Arial,sans-serif; color:#4A3F35; font-weight:bold; text-decoration:underline;">Menu</a>
+<a href="feedback.html" style="font-family:Arial,sans-serif; color:#4A3F35; font-weight:bold; text-decoration:underline;">Feedback</a>
+<a href="gallery.html" style="font-family:Arial,sans-serif; color:#4A3F35; font-weight:bold; text-decoration:underline;">Gallery</a>
+<a href="reservation.html" style="font-family:Arial,sans-serif; background:#809671; color:white; padding:8px 18px; border-radius:20px; font-weight:bold; text-decoration:underline; box-shadow:0 4px 10px rgba(0,0,0,.15);">Reservation</a>
+<a href="contact.html" style="font-family:Arial,sans-serif; color:#4A3F35; font-weight:bold; text-decoration:underline;">Contact</a>
+</div>
+
+<div style="height:180px;"></div>
+
+<h1 style="font-family:'Times New Roman',serif; font-size:50px; color:white; background:#809671; padding:8px 20px; border-radius:20px; text-align:center;"><b> Reservation</b></h1>
+
+<form>
+
+<center>
+<div style="width:75%; background:rgba(255,250,245,0.96); border:3px solid #B3B792; border-radius:25px; padding:30px; box-shadow:0px 8px 18px rgba(0,0,0,.3); text-align:left;">
+
+<fieldset style="background:#FFFDF8; border:3px solid #809671; border-radius:20px; padding:25px;">
+<legend style="font-family:'Times New Roman',serif; font-size:20px; color:white; background:#809671; padding:8px 20px; border-radius:20px;"><b>👤 Guests Information</b></legend>
+
+<label for="fname" style="font-family:Arial;"><b>First Name:</b></label><br>
+<input type="text" id="fname" name="fname" placeholder="Enter your first name" style="width:95%; padding:10px; border-radius:10px; border:2px solid #B3B792; margin-top:5px; margin-bottom:15px;">
+
+<label for="lname" style="font-family:Arial;"><b>Last Name:</b></label><br>
+<input type="text" id="lname" name="lname" placeholder="Enter your last name" style="width:95%; padding:10px; border-radius:10px; border:2px solid #B3B792; margin-top:5px; margin-bottom:15px;">
+
+<label for="email" style="font-family:Arial;"><b>📧 Email:</b></label><br>
+<input type="email" id="email" name="email" placeholder="example@gmail.com" required style="width:95%; padding:10px; border-radius:10px; border:2px solid #B3B792; margin-top:5px; margin-bottom:15px;">
+
+<label for="MobNo" style="font-family:Arial;"><b>📱 Mobile Number:</b></label><br>
+<input type="tel" id="MobNo" name="MobNo" placeholder="09XXXXXXXXX" maxlength="11" pattern="09[0-9]{9}" style="width:95%; padding:10px; border-radius:10px; border:2px solid #B3B792; margin-top:5px;">
+</fieldset>
+
+<br><br>
+
+<fieldset style="background:#FFFDF8; border:3px solid #809671; border-radius:20px; padding:25px;">
+<legend style="font-family:'Times New Roman',serif; font-size:20px; color:white; background:#809671; padding:8px 20px; border-radius:20px;"><b>🍽 Reservation Details</b></legend>
+
+<label for="amount" style="font-family:Arial;">Amount of People:</label><br>
+<input type="number" id="amount" name="amount" min="1" placeholder="1" style="width:95%; padding:10px; border-radius:10px; border:2px solid #B3B792; margin-top:5px; margin-bottom:15px;">
+
+<label for="date" style="font-family:Arial;"><b>📅 Date:</b></label><br>
+<input type="date" id="date" name="date" style="width:95%; padding:10px; border-radius:10px; border:2px solid #B3B792; margin-top:5px; margin-bottom:15px;">
+
+<label for="time" style="font-family:Arial;"><b>🕒 Time:</b></label><br>
+<input type="time" id="time" name="time" style="width:95%; padding:10px; border-radius:10px; border:2px solid #B3B792; margin-top:5px; margin-bottom:15px;">
+
+<label for="additional"  style="font-family:Arial;"><b>📝 Additional Requests:</b></label><br>
+<textarea id="additional" name="additional" rows="5" placeholder="Write your additional requests here..." style="width:95%; padding:12px; border-radius:12px; border:2px solid #B3B792; margin-top:5px;"></textarea>
+
+</div>
+</fieldset>
+<br><br><br>
+
+<div style="text-align:center;">
+<a href="backtohome.html" target="_self">
+<button type="submit" style="background:#809671; color:white; width:190px; height:45px; border:none; border-radius:30px; font-size:16px; font-weight:bold;">
+Submit Reservation
+</button>
+</a>
+
+<input type="reset" value="Clear" style="background:#D2AB80; color:white; width:120px; height:45px; border:none; border-radius:30px; font-size:15px; font-weight:bold;">
+
+<a href="home.html" target="_self">
+<button type="button" style="background:#725C3A; color:white; width:120px; height:45px; border:none; border-radius:30px; font-size:15px; font-weight:bold;">
+Home
+</button>
+</a>
+
+</div>
+</center>
+<br><br>
+
+<div style="background:#725C3A; color:white; padding:45px; border-radius:35px 35px 0 0; text-align:center;">
+<h2 style="margin-top:0; font-family:'Times New Roman',serif; letter-spacing:2px;">Tahanan Bistro</h2>
+<p style="font-family:serif; font-style:italic; font-size:18px;">Where every meal feels like home.</p>
+<hr style="width:60%; border:1px solid rgba(255,255,255,.25);">
+<p>
+<a href="home.html" style="font-family:Arial,sans-serif; color:#E5E0D8; margin:15px; text-decoration:underline;">Home</a>
+<a href="about.html" style="font-family:Arial,sans-serif; color:#E5E0D8; margin:15px; text-decoration:underline;">About</a>
+<a href="menu.html" style="font-family:Arial,sans-serif; color:#E5E0D8; margin:15px; text-decoration:underline;">Menu</a>
+<a href="feedback.html" style="font-family:Arial,sans-serif; color:#E5E0D8; margin:15px; text-decoration:underline;">Feedback</a>
+<a href="gallery.html" style="font-family:Arial,sans-serif; color:#E5E0D8; margin:15px; text-decoration:underline;">Gallery</a>
+<a href="reservation.html" style="font-family:Arial,sans-serif; color:#E5E0D8; margin:15px; text-decoration:underline;">Reservation</a>
+<a href="contact.html" style="font-family:Arial,sans-serif; color:#E5E0D8; margin:15px; text-decoration:underline;">Contact</a>
+</p>
+<div style="margin:20px auto; width:120px; display:flex; justify-content:space-around;">
+<span style="width:16px; height:16px; background:#809671; border-radius:50%; box-shadow:2px 2px 6px rgba(0,0,0,.25);"></span>
+<span style="width:16px; height:16px; background:#D2AB80; border-radius:50%; box-shadow:2px 2px 6px rgba(0,0,0,.25);"></span>
+<span style="width:16px; height:16px; background:#B3B792; border-radius:50%; box-shadow:2px 2px 6px rgba(0,0,0,.25);"></span>
+</div>
+<p style="font-family:monospace; font-size:14px;">© 2026 Tahanan Bistro. All Rights Reserved.</p>
+<p style="font-family:monospace; font-size:13px; opacity:.85;">Crafted with warmth, inspired by home, and shared with love.</p>
+</div>
+
+</form>
+
+</body>
+</html>
